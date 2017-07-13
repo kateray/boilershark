@@ -1,8 +1,11 @@
 # Installed node packages #
 part-1/node_modules
+part-2/node_modules
 
 # Logs and databases #
 *.log
 
 # OS generated files #
 .DS_Store
+
+*.swp
