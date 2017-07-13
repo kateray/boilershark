@@ -4,8 +4,9 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-import App from './containers/App'
-import Header from './containers/Header'
+import { App } from './containers/App'
+import { Fish } from './containers/Fish'
+import { Header } from './components/Header'
 import appStore from './reducers'
 
 require('../css/App.scss')
@@ -19,7 +20,8 @@ render(
     <BrowserRouter>
       <div>
         <Header />
-        <Route path='/' component={App} />
+        <Route exact path='/' component={App} />
+        <Route path='/fishes/:fish_name' component={Fish} />
       </div>
     </BrowserRouter>
   </Provider>,

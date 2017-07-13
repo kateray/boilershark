@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux'
+import * as FishActions from '../actions/FishActions'
 
 const app = (state = {}, action) => {
   switch (action.type) {
@@ -9,6 +10,11 @@ const app = (state = {}, action) => {
 
 const fishes = (state = [], action) => {
   switch (action.type) {
+    case FishActions.ADD_FISH:
+      return [
+        ...state,
+        action.payload
+      ]
     default:
       return state
   }
