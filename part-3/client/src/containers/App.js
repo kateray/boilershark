@@ -8,7 +8,7 @@ class AppInternal extends PureComponent {
   render () {
     return (
       <div>
-        <AddFish addFish={this.props.addFish}/>
+        <AddFish addFish={this.props.addFish} />
         <ul>
           {this.props.fishes.map(fish =>
             <FishItem
