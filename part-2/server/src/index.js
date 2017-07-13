@@ -3,6 +3,8 @@ const path = require('path')
 
 const app = Express()
 
+app.use('/dist', Express.static('dist'))
+
 app.get('/', (req, res) => {
   res.sendFile('index.html', {root: path.join(__dirname, '../../client')})
 })

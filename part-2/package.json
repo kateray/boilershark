@@ -8,15 +8,20 @@
   "license": "MIT",
   "scripts": {
     "test": "standard",
-    "start": "nodemon server/src/index.js --exec babel-node --presets env"
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack -d --watch",
+    "watch:server": "nodemon server/src/index.js --exec babel-node"
   },
   "dependencies": {
     "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
     "express": "^4.15.3",
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "webpack": "^3.2.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "yarn-run-all": "^3.1.1"
   }
 }
