@@ -1,4 +1,4 @@
 # Part 1 - A Basic Node Server
 
 To run:
-`$ npm start`
+`$ yarn start`
