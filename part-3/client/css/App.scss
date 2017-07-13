@@ -5,3 +5,9 @@ body {
   padding: 0px;
   font-family: $font-family;
 }
+
+#root {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
