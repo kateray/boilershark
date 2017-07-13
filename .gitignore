@@ -1,6 +1,7 @@
 # Installed node packages #
 part-1/node_modules
 part-2/node_modules
+part-3/node_modules
 
 # Logs and databases #
 *.log
@@ -12,3 +13,4 @@ part-2/node_modules
 
 # Builds #
 part-2/dist
+part-3/dist
