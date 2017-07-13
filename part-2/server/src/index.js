@@ -1,9 +1,10 @@
 const Express = require('express')
+const path = require('path')
 
 const app = Express()
 
 app.get('/', (req, res) => {
-  res.send('Hello Sharks!')
+  res.sendFile('index.html', {root: path.join(__dirname, '../../client')})
 })
 
 app.listen((process.env.PORT || 3000), () => {

@@ -9,3 +9,6 @@ part-2/node_modules
 .DS_Store
 
 *.swp
+
+# Builds #
+part-2/dist
