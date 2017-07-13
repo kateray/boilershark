@@ -20,4 +20,4 @@ const fishes = (state = [], action) => {
   }
 }
 
-export default combineReducers({fishes, app})
+export const rootReducer = combineReducers({fishes, app})
