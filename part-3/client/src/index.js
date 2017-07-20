@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import { App } from './containers/App'
 import { Fish } from './containers/Fish'
 import { Header } from './components/Header'
-import { rootReducer }  from './reducers'
+import { rootReducer } from './reducers'
 
 require('../css/App.scss')
 
