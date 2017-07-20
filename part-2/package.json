@@ -7,12 +7,18 @@
   "author": "Kate Ray",
   "license": "MIT",
   "scripts": {
-    "test": "standard",
+    "test": "standard && jest",
     "start": "npm-run-all --parallel watch:server watch:build",
     "watch:build": "webpack -d --watch",
     "watch:server": "nodemon server/src/index.js --exec babel-node"
   },
   "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "test",
+      "expect"
+    ],
     "ignore": [
       "/dist/"
     ]
@@ -35,7 +41,9 @@
     "webpack-manifest-plugin": "^1.1.2"
   },
   "devDependencies": {
+    "jest": "^20.0.4",
     "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
     "yarn-run-all": "^3.1.1"
   }
 }
