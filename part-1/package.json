@@ -7,8 +7,16 @@
   "author": "Kate Ray",
   "license": "MIT",
   "scripts": {
-    "test": "standard",
-    "start": "nodemon src/index.js --exec babel-node --presets env"
+    "test": "standard && jest",
+    "start": "nodemon server/src/index.js --exec babel-node --presets env"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "test",
+      "expect"
+    ]
   },
   "dependencies": {
     "babel-cli": "^6.24.1",
@@ -17,6 +25,8 @@
     "standard": "^10.0.2"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
   }
 }
