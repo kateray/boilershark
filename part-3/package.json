@@ -17,7 +17,9 @@
       "describe",
       "context",
       "test",
-      "expect"
+      "expect",
+      "it",
+      "jest"
     ],
     "ignore": [
       "/dist/"
@@ -45,8 +47,10 @@
     "webpack-manifest-plugin": "^1.1.2"
   },
   "devDependencies": {
+    "enzyme": "^2.9.1",
     "jest": "^20.0.4",
     "nodemon": "^1.11.0",
+    "react-test-renderer": "^15.6.1",
     "supertest": "^3.0.0",
     "yarn-run-all": "^3.1.1"
   }
