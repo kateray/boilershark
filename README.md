@@ -1,3 +1,4 @@
-# JS Boilerplate - for sharks!
+# Part 2 - A React App using Webpack for compilation
 
-Step 0: An Express App
+To run:
+`$ yarn start`
