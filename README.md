@@ -1,3 +1,4 @@
-# JS Boilerplate - for sharks!
+# Part 1 - A Basic Node Server
 
-Step 0: An Express App
+To run:
+`$ yarn start`
