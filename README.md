@@ -1,3 +1,4 @@
-# JS Boilerplate - for sharks!
+# Part 3 - Redux & Routing
 
-Step 0: An Express App
+To run:
+`$ yarn start`
