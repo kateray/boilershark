@@ -9,7 +9,7 @@
   "scripts": {
     "test": "standard && jest",
     "start": "npm-run-all --parallel watch:server watch:build",
-    "watch:build": "webpack -d --watch",
+    "watch:build": "webpack --env=dev -d --watch",
     "watch:server": "nodemon server/src/index.js --exec babel-node"
   },
   "standard": {
